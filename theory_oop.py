@@ -84,9 +84,21 @@ print(f'{x},{y}')
 for _ in range(10):
     print("_!", end='')
 
-print()
-print(f'{3}')
-print()
-print(f'{4}')
-print()
-print(f'{5}')
+
+print('\n----Встроенные функции issubclass и isinstance отвечают на вопрос о наследовании----')
+class A: pass
+class B(A): pass
+
+print(f'class A - parent; class B - subclass')
+print(f'issubclass (B, A) == {issubclass(B, A)}')  # True
+print(f'issubclass (A, B) == {issubclass(A, B)}')  # False
+print(f'isinstance (B(), A) == {isinstance(B(), A)}')  # True
+print(f'isinstance (B, A) == {isinstance(B, A)}')  # False
+class C(A): pass
+print(f"List of Class A Subclass Types: {A.__subclasses__()}")
+print(f"type of A: {type(A)}")
+
+print('\n--------')
+print(f'{"--------"}')
+
+
