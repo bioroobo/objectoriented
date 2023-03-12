@@ -1,3 +1,13 @@
+class Matr:
+    pass
+
+print(Matr)  # <class '__main__.Matr'>
+print(Matr())  # <__main__.Matr object at 0x7f09699f3fa0>
+print('type(Matr) =', type(Matr))  # <class 'type'>
+print('type(Matr())', type(Matr()))  # <class '__main__.Matr'>
+print('type(Matr())():', type(Matr())())  # <__main__.Matr object at 0x7f09699f3f70>
+print(type(int))
+
 class Point:
     not_own = 1  # это не собственный атрибут объекта
     def __init__(self, x, y):
