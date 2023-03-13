@@ -1,16 +1,9 @@
-class Matr:
-    pass
-
-print(Matr)  # <class '__main__.Matr'>
-print(Matr())  # <__main__.Matr object at 0x7f09699f3fa0>
-print('type(Matr) =', type(Matr))  # <class 'type'>
-print('type(Matr())', type(Matr()))  # <class '__main__.Matr'>
-print('type(Matr())():', type(Matr())())  # <__main__.Matr object at 0x7f09699f3f70>
-print(type(int))
-
+print('\n--------------------------------------------------------------------')
 class Point:
     not_own = 1  # это не собственный атрибут объекта
     def __init__(self, x, y):
+        print('\nPoint,__init__: self=', self)
+        print('Point,__init__: type(self)=', type(self))
         # собственные атрибуты объекта:
         self.x = x
         self.y = y
@@ -50,6 +43,7 @@ print('\nновый собственный атрибут с именем, со�
 #pnt2.move = 1000  # новый собственный атрибут с именем, совпадающим с именем метода "забивает" метод:
 #pnt2.move()  # эта команда выбросит ошибку, т.к. здесь move уже не метод, а собственный атрибут
 
+print('\n--------------------------------------------------------------------')
 print('\n ===== Comment =====\n')
 
 class Comment:
@@ -88,6 +82,7 @@ print('second_comment =', second_comment)
 print('first_comment + second_comment =', first_comment + second_comment)
 print('first_comment == second_comment :', first_comment == second_comment)
 print('\n ===== END Comment =====\n')
+print('\n--------------------------------------------------------------------')
 
 x, _, y = (1, 2, 3) # x = 1, y = 3
 print(f'{x},{y}')
@@ -108,7 +103,6 @@ class C(A): pass
 print(f"List of Class A Subclass Types: {A.__subclasses__()}")
 print(f"type of A: {type(A)}")
 
-print('\n--------')
-print(f'{"--------"}')
+print('\n--------------------------------------------------------------------')
 
 
